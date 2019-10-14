@@ -15,10 +15,10 @@ const Gizmo = {
         console.log("cackle cackle cackle")
     },
     mood: function(adjective) {
-        console.log(`${Gizmo.name} is very ${adjective} today.` )
+        console.log(`${this.name} is very ${adjective} today.` )
     }
 };
 
-Gizmo.mood("Rosy");
+Gizmo.mood("rosy");
 Gizmo.nightdisturbance();
 Gizmo.tickleresponse();
