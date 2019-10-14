@@ -16,9 +16,22 @@ const Gizmo = {
     },
     mood: function(adjective) {
         console.log(`${this.name} is very ${adjective} today.` )
+    },
+    favoriteToys: [],
+    play: function(toy) {
+      if(toy==="Georgia") {
+          this.favoriteToys.push(toy)
+          console.log(`${this.name} loves to play with ${toy}.`)
+      } else {
+          console.log(`${this.name} doesn't like ${toy} very much.`)
+      }
     }
 };
 
 Gizmo.mood("rosy");
 Gizmo.nightdisturbance();
 Gizmo.tickleresponse();
+
+Gizmo.play("Georgia");
+Gizmo.play("Barbie");
+console.log(Gizmo.favoriteToys);
